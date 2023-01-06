@@ -10,7 +10,16 @@
 </head>
 
 <body>
-  <!-- ✈ ⛱ -->
+  <!-- ✈ ⛱ Trucs à ajouter :
+
+  - Slider img dans le header
+  - Cards régions avec descrip
+  - Section visite
+  - Grand slider imgs
+  - A propos du site
+  - Footer avec links utiles : FB jordanie / Ambassade / France diplomatie Jordanie 
+  - Animations éléments au scroll 👌-->
+
   <div class="loading__screen">
     <img class="loading__logo" src="images/headerIcon.gif" alt="gif représentant une icone d'emplacement">
     <p class="loading__txt primaryColor-txt">chargement de votre destination !</p>
@@ -24,7 +33,7 @@
       </div>
       <nav>
         <ul class="header__nav">
-          <li><a class="textFont header__nav--link" href="#">Régions</a></li>
+          <li><a class="textFont header__nav--link" href="#region">Régions</a></li>
           <li><a class="textFont header__nav--link" href="#">Visites</a></li>
           <li><a class="textFont header__nav--link" href="#">A propos</a></li>
         </ul>
@@ -46,20 +55,104 @@
       </figure>
 
       <div class="header__txt">
-        <h2 class="header__subTitle titleFont secondaryColor-txt">Découvrez<br>la Jordanie</h2>
+        <h2 class="header__subTitle titleFont secondaryColor-txt">Découvrez<br>la <span
+            class="txt__deco">Jordanie</span></h2>
         <p class=" textFont secondaryColor-txt">La Jordanie est un pays arabe situé sur la rive orientale du Jourdain.
           Il se compose de monuments anciens, de réserves naturelles et de stations balnéaires. Le pays abrite notamment
           le célèbre site archéologique de Pétra, la capitale nabatéenne fondée autour de 300 ans av. J-C. Installée
           dans une vallée étroite et pourvue de tombeaux, de temples et de monuments sculptés dans les falaises en grès
           rose qui l'entourent, Pétra mérite bien son surnom de « cité rose ».</p>
-        <a class="header__btn primaryColor-txt textFont"
-          href="https://www.tripadvisor.fr/Hotels-g293985-Jordan-Hotels.html" target="_blank">Je réserve mon séjour
+        <a class="header__btn primaryColor-txt textFont" href="https://www.voyage-jordanie.com/" target="_blank">Je
+          réserve mon séjour
           <span class="header__btn-fly">✈</span></a>
       </div>
     </div>
   </header>
 
-  
+  <section id="region" class="region">
+    <h2 class="section__title titleFont primaryColor-txt">Régions à explorer</h2>
+    <h3 class="section__subtitle textFont primaryColor-txt">Envie d'en savoir plus ? Survolez les vignettes !</h3>
+    <div class="region__container">
+      <div class="region__content">
+        <figure class="region__card"><!--Rename + compress imgs figure !-->
+          <img class="region__cardImg" src="images/aqaba.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="region__cardTxt textFont primaryColor-txt">Aqaba</figcaption>
+        </figure>
+        <figure class="region__card"><!--Rename + compress imgs figure !-->
+          <img class="region__cardImg" src="images/amman.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="region__cardTxt textFont primaryColor-txt">Amman</figcaption>
+        </figure>
+      </div>
+      <div class="region__content">
+        <figure class="region__card"><!--Rename + compress imgs figure !-->
+          <img class="region__cardImg" src="images/petra_2.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="region__cardTxt textFont primaryColor-txt">Pétra</figcaption>
+        </figure>
+        <figure class="region__card"><!--Rename + compress imgs figure !-->
+          <img class="region__cardImg" src="images/madaba.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="region__cardTxt textFont primaryColor-txt">Madaba</figcaption>
+        </figure>
+      </div>
+    </div>
+    <article class="region__about region__about--active">
+      <div class="region__container">
+        <h3 class="region__subtitle titleFont secondaryColor-txt">Aqaba</h3>
+        <p class="region__txt textFont secondaryColor-txt">Aqaba est une ville portuaire de Jordanie située au bord du
+          golfe d'Aqaba,
+          adjacent à la mer Rouge. Habitée depuis 4000 av. J.-C., elle abrite le fort d'Aqaba, datant de l'ère
+          islamique,
+          et le musée archéologique situé à proximité. Ses stations balnéaires sont appréciées des véliplanchistes et
+          autres pratiquants de sports nautiques.
+          La région est particulièrement propice à la plongée sous-marine, car elle possède de remarquables sites de
+          plongée comme la barrière de corail de
+          Yamanieh dans le parc marin d'Aqaba, au sud de la ville. ― Google<br><button
+            class="region__btn textFont">Découvrir une autre région ➤</button></p>
+      </div>
+    </article>
+    <article class="region__about">
+      <div class="region__container">
+        <h3 class="region__subtitle titleFont secondaryColor-txt">Amman</h3>
+        <p class="region__txt textFont secondaryColor-txt">Amman, capitale de la Jordanie, est une ville moderne aux
+          nombreuses ruines antiques.
+          Au sommet de la colline de Jabal al-Qal'a se dresse la citadelle historique, avec les piliers du temple romain
+          d'Hercule et le palais d'Umayyad
+          (datant du VIIIe siècle), célèbre pour son grand dôme. Construit à flanc d'une autre colline du centre-ville,
+          le théâtre romain est un amphithéâtre en pierre du IIe siècle pouvant recevoir 6 000 personnes et accueillant
+          des événements occasionnels. ― Google
+          <br><button class="region__btn textFont">Découvrir une autre région ➤</button>
+        </p>
+      </div>
+    </article>
+    <article class="region__about">
+      <div class="region__container">
+        <h3 class="region__subtitle titleFont secondaryColor-txt">Pétra</h3>
+        <p class="region__txt textFont secondaryColor-txt">Pétra est un site archéologique célèbre, situé dans le désert
+          sud-ouest jordanien. Remontant à environ 300 av. J.C.,
+          elle fut la capitale du royaume nabatéen. Accessible par le Sîq, un canyon étroit, le site renferme tombeaux
+          et temples taillés dans les
+          falaises de grès rose d'où il tient son surnom de "ville rose". La Khazneh, haute de 45 mètres, est sans doute
+          l'édifice le plus célèbre de Pétra.
+          Il s'agit d'un temple à la façade ornée de style grec et connu sous l'autre nom de "Trésor". ― Google
+          <br><button class="region__btn textFont">Découvrir une autre région ➤</button>
+        </p>
+      </div>
+    </article>
+    <article class="region__about">
+      <div class="region__container">
+        <h3 class="region__subtitle titleFont secondaryColor-txt">Madaba</h3>
+        <p class="region__txt textFont secondaryColor-txt">Héritière d’un passé millénaire, Madaba, la ville des
+          mosaïques, est une destination de pèlerinage biblique qu’il ne faut pas manquer.
+          Dans l’ancien monde, Madaba est un territoire de plaines que les Israélites ont pris de force aux Moabites.
+          « Nous avons lancé nos flèches contre eux : de Hesbon à Dibon, tout est détruit. Nous avons étendu nos
+          dévastations jusqu'à Nophach, jusqu'à Médeba »,
+          lit-on dans Nombres 21:30. Les restes d’un sépulcre dans la partie orientale de la ville prouvent que des
+          hommes y ont vécu à cette époque.
+          ― voyage-jordanie.com<br><button class="region__btn textFont">Découvrir une autre région ➤</button></p>
+      </div>
+    </article>
+  </section>
+
+
 
 
 
