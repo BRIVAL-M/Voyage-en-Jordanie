@@ -13,17 +13,17 @@
   <!-- ✈ ⛱ Trucs à ajouter :
 
   - Slider img dans le header
-  - Régions : Faire le Js pour faire pop les articles...
+  
  
-  - Section visite : Faire le hover du btn
+ 
   - A propos du site : Why cette page...
-  - Grand slider imgs ou mini galerie... A voir...
+ 
   - Footer avec links utiles : FB jordanie / Ambassade / France diplomatie Jordanie ...
-  - Revoir le LoaderScreen (ou pas lol) retirer le scroll Y !
+ 
   - Revoir les "scroll-behavior" de la nav
-  - * Animations éléments au scroll 👌
+ 
   - VOIR POUR DES WEBKITS FIREFOX 😅 
-  - "Reframer" les IMAGES + 1 coup de TinyPng sur les imgs du slider!
+ 
   - Réduire la font-size des Titles first letters en mobile !
   - Voir pour la version Galaxy fold !-->
 
@@ -42,18 +42,18 @@
         <ul class="header__nav">
           <li><a class="textFont header__nav--link" href="#section__region">Régions</a></li>
           <li><a class="textFont header__nav--link" href="#section__visite">Visites</a></li>
-          <li><a class="textFont header__nav--link" href="#">A propos</a></li>
+          <li><a class="textFont header__nav--link" href="#section__about">A propos</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="header__content">
-      <figure class="header__card header__card--active"><!--Rename + compress imgs figure !-->
+      <figure class="header__card header__card--active">
         <img class="header__cardImg" src="images/petra1.jpg" alt="image représentant un payasage de la Jordanie">
         <figcaption class="header__cardTxt textFont primaryColor-txt">Le trésor de Pétra</figcaption>
       </figure>
       <figure class="header__card ">
-        <img class="header__cardImg" src="images/petra2.jpg" alt="image représentant un payasage de la Jordanie">
+        <img class="header__cardImg" src="images/" alt="image représentant un payasage de la Jordanie">
         <figcaption class="header__cardTxt textFont">Le trésor de Pétra</figcaption>
       </figure>
       <figure class="header__card ">
@@ -78,24 +78,25 @@
 
   <section id="section__region" class="region">
     <h2 class="section__title titleFont primaryColor-txt">Régions à explorer</h2>
-    <h3 class="section__subtitle textFont primaryColor-txt">Envie d'en savoir plus ? Survolez les vignettes !</h3>
+    <h3 class="section__subtitle textFont primaryColor-txt">Envie d'en savoir plus ?</h3>
     <div class="region__container">
       <div class="region__content">
-        <figure class="region__card"><!--Rename + compress imgs figure !-->
-          <img class="region__cardImg" src="images/aqaba.jpg" alt="image représentant un payasage de la Jordanie">
+        <figure class="region__card">
+          <img class="region__cardImg region__cardImg--active" src="images/aqaba.jpg"
+            alt="image représentant un payasage de la Jordanie">
           <figcaption class="region__cardTxt textFont primaryColor-txt">Aqaba</figcaption>
         </figure>
-        <figure class="region__card"><!--Rename + compress imgs figure !-->
+        <figure class="region__card">
           <img class="region__cardImg" src="images/amman.jpg" alt="image représentant un payasage de la Jordanie">
           <figcaption class="region__cardTxt textFont primaryColor-txt">Amman</figcaption>
         </figure>
       </div>
       <div class="region__content">
-        <figure class="region__card"><!--Rename + compress imgs figure !-->
+        <figure class="region__card">
           <img class="region__cardImg" src="images/petra_2.jpg" alt="image représentant un payasage de la Jordanie">
           <figcaption class="region__cardTxt textFont primaryColor-txt">Pétra</figcaption>
         </figure>
-        <figure class="region__card"><!--Rename + compress imgs figure !-->
+        <figure class="region__card">
           <img class="region__cardImg" src="images/madaba.jpg" alt="image représentant un payasage de la Jordanie">
           <figcaption class="region__cardTxt textFont primaryColor-txt">Madaba</figcaption>
         </figure>
@@ -112,8 +113,8 @@
           autres pratiquants de sports nautiques.
           La région est particulièrement propice à la plongée sous-marine, car elle possède de remarquables sites de
           plongée comme la barrière de corail de
-          Yamanieh dans le parc marin d'Aqaba, au sud de la ville. ― Google<br><button
-            class="region__btn textFont">Découvrir une autre région ➤</button></p>
+          Yamanieh dans le parc marin d'Aqaba, au sud de la ville. ― Google<br><button class="region__btn textFont"
+            onclick="displayArticle()">Découvrir une autre région <span> ►</span></button></p>
       </div>
     </article>
     <article class="region__about">
@@ -126,7 +127,8 @@
           (datant du VIIIe siècle), célèbre pour son grand dôme. Construit à flanc d'une autre colline du centre-ville,
           le théâtre romain est un amphithéâtre en pierre du IIe siècle pouvant recevoir 6 000 personnes et accueillant
           des événements occasionnels. ― Google
-          <br><button class="region__btn textFont">Découvrir une autre région ➤</button>
+          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span>
+              ►</span></button>
         </p>
       </div>
     </article>
@@ -140,7 +142,8 @@
           falaises de grès rose d'où il tient son surnom de "ville rose". La Khazneh, haute de 45 mètres, est sans doute
           l'édifice le plus célèbre de Pétra.
           Il s'agit d'un temple à la façade ornée de style grec et connu sous l'autre nom de "Trésor". ― Google
-          <br><button class="region__btn textFont">Découvrir une autre région ➤</button>
+          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span>
+              ►</span></button>
         </p>
       </div>
     </article>
@@ -154,7 +157,8 @@
           dévastations jusqu'à Nophach, jusqu'à Médeba »,
           lit-on dans Nombres 21:30. Les restes d’un sépulcre dans la partie orientale de la ville prouvent que des
           hommes y ont vécu à cette époque.
-          ― voyage-jordanie.com<br><button class="region__btn textFont">Découvrir une autre région ➤</button></p>
+          ― Voyage-jordanie.com<br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre
+            région <span> ►</span></button></p>
       </div>
     </article>
 
@@ -168,7 +172,7 @@
     <div>
       <div class="visite__container">
         <img class="visite__img" src="images/petraVisite2resize.jpg"
-          alt="image représentative le trésor de pétra en Jordanie">
+          alt="image représentant le trésor de pétra en Jordanie">
         <div>
           <h2 class="section__title titleFont primaryColor-txt">Visites incontournables</h2>
           <h3 class="section__subtitle textFont primaryColor-txt">A ne pas manquer lors de votre séjour !</h3>
@@ -184,24 +188,30 @@
             target="_blank">En savoir plus</a>
         </div>
       </div>
-      <!-- <div class="visite__gallery"> A revoir...
-  <div class="gallery__container">
-    <img  class= "gallery__view1" src="images/deadSea1_gallery.jpg" alt="image représentative de la mer morte">
-    <img class= "gallery__view1" src="images/deadSea2_gallery.jpg" alt="image représentative de la mer morte">
-  </div>
-<img class="gallery__view2" src="images/theatrePetra_gallery.jpg" alt="image représentative du théâtre de Pétra">
-<div class="gallery__container">
-  <img  class= "gallery__view3" src="images/deadSea1_gallery.jpg" alt="image représentative de la mer morte">
-  <img class= "gallery__view3" src="images/deadSea2_gallery.jpg" alt="image représentative de la mer morte">
-</div>
 
-  </div>
-  
-  -->
+      <p class="visite__info textFont">Un aperçu des images dans un carrousel est disponible sur un écran<br> plus grand
+        (970px) </p>
+      <div class="visite__gallery">
+        <!--Il aurait été préférable des mettre les images dans des DIV (bg-img)
+          afin d'alléger le HTML et d'optimiser les dimensions des images en fontion de la taille de l'écran 😕...-->
+
+        <div class="gallery__container">
+          <img class="currentImg gallery__view1" src="images/petra_gallery.jpg"
+            alt="image représentant un monument de pétra" onclick="createSlider('images/petra_gallery.jpg')">
+          <img class="currentImg gallery__view1" src="images/jerash_gallery.jpg"
+            alt="image représentant les colonnes de jerash" onclick="createSlider('images/jerash_gallery.jpg')">
+        </div>
+        <img class="currentImg gallery__view2" src="images/theatrePetra_gallery.jpg"
+          alt="image représentant le théâtre de Pétra" onclick="createSlider('images/theatrePetra_gallery.jpg')">
+        <div class="gallery__container">
+          <img class="currentImg gallery__view3" src="images/deadSea_gallery.jpg"
+            alt="image représentative de la mer morte" onclick="createSlider('images/deadSea_gallery.jpg')">
+          <img class="currentImg gallery__view3" src="images/desert_gallery.jpg"
+            alt="image représentant le desert jordanien" onclick="createSlider('images/desert_gallery.jpg')">
+        </div>
+      </div>
     </div>
   </section>
-
-
 
   <section id="section__about" class="about">
     <div>
