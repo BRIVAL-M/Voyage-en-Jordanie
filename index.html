@@ -5,28 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="style.css">
   <title>Voyage en Jordanie</title>
 </head>
 
 <body>
-  <!-- ✈ ⛱ Trucs à ajouter :
-
-  - Slider img dans le header
-  
- 
- 
-  - A propos du site : Why cette page...
- 
-  - Footer avec links utiles : FB jordanie / Ambassade / France diplomatie Jordanie ...
- 
-  - Revoir les "scroll-behavior" de la nav
- 
-  - VOIR POUR DES WEBKITS FIREFOX 😅 
- 
-  - Réduire la font-size des Titles first letters en mobile !
-  - Voir pour la version Galaxy fold !-->
-
+  <!-- ✈ ⛱ -->
   <div class="loading__screen">
     <img class="loading__logo" src="images/headerIcon.gif" alt="gif représentant une icone d'emplacement">
     <p class="loading__txt primaryColor-txt">chargement de votre destination !</p>
@@ -48,19 +33,25 @@
     </div>
 
     <div class="header__content">
-      <figure class="header__card header__card--active">
-        <img class="header__cardImg" src="images/petra1.jpg" alt="image représentant un payasage de la Jordanie">
-        <figcaption class="header__cardTxt textFont primaryColor-txt">Le trésor de Pétra</figcaption>
-      </figure>
-      <figure class="header__card ">
-        <img class="header__cardImg" src="images/" alt="image représentant un payasage de la Jordanie">
-        <figcaption class="header__cardTxt textFont">Le trésor de Pétra</figcaption>
-      </figure>
-      <figure class="header__card ">
-        <img class="header__cardImg" src="images/" alt="image représentant un payasage de la Jordanie">
-        <figcaption class="header__cardTxt textFont">Le trésor de Pétra</figcaption>
-      </figure>
-
+      <div class="header__adjust">
+        <figure class="header__card header__card--active">
+          <img class="header__cardImg" src="images/petra1.jpg" alt="image représentant le trésor de Pétra">
+          <figcaption class="header__cardTxt textFont primaryColor-txt">Le trésor de Pétra</figcaption>
+        </figure>
+        <figure class="header__card">
+          <img class="header__cardImg" src="images/desert.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="header__cardTxt textFont">Désert Jordanien</figcaption>
+        </figure>
+        <figure class="header__card">
+          <img class="header__cardImg" src="images/desert2.jpg" alt="image représentant un payasage de la Jordanie">
+          <figcaption class="header__cardTxt textFont">Désert Jordanien</figcaption>
+        </figure>
+        <ul class="header__indicatorBox">
+          <li class="header__indicator header__indicator--active"></li>
+          <li class="header__indicator"></li>
+          <li class="header__indicator"></li>
+        </ul>
+      </div>
       <div class="header__txt">
         <h2 class="header__subTitle titleFont secondaryColor-txt">Découvrez<br>la <span
             class="txt__deco">Jordanie</span></h2>
@@ -82,8 +73,7 @@
     <div class="region__container">
       <div class="region__content">
         <figure class="region__card">
-          <img class="region__cardImg region__cardImg--active" src="images/aqaba.jpg"
-            alt="image représentant un payasage de la Jordanie">
+          <img class="region__cardImg " src="images/aqaba.jpg" alt="image représentant un payasage de la Jordanie">
           <figcaption class="region__cardTxt textFont primaryColor-txt">Aqaba</figcaption>
         </figure>
         <figure class="region__card">
@@ -114,7 +104,8 @@
           La région est particulièrement propice à la plongée sous-marine, car elle possède de remarquables sites de
           plongée comme la barrière de corail de
           Yamanieh dans le parc marin d'Aqaba, au sud de la ville. ― Google<br><button class="region__btn textFont"
-            onclick="displayArticle()">Découvrir une autre région <span> ►</span></button></p>
+            onclick="displayArticle()">Découvrir une autre région <span class="region__btn--arrow"> ►</span></button>
+        </p>
       </div>
     </article>
     <article class="region__about">
@@ -127,7 +118,8 @@
           (datant du VIIIe siècle), célèbre pour son grand dôme. Construit à flanc d'une autre colline du centre-ville,
           le théâtre romain est un amphithéâtre en pierre du IIe siècle pouvant recevoir 6 000 personnes et accueillant
           des événements occasionnels. ― Google
-          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span>
+          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span
+              class="region__btn--arrow">
               ►</span></button>
         </p>
       </div>
@@ -142,7 +134,8 @@
           falaises de grès rose d'où il tient son surnom de "ville rose". La Khazneh, haute de 45 mètres, est sans doute
           l'édifice le plus célèbre de Pétra.
           Il s'agit d'un temple à la façade ornée de style grec et connu sous l'autre nom de "Trésor". ― Google
-          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span>
+          <br><br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre région <span
+              class="region__btn--arrow">
               ►</span></button>
         </p>
       </div>
@@ -158,21 +151,16 @@
           lit-on dans Nombres 21:30. Les restes d’un sépulcre dans la partie orientale de la ville prouvent que des
           hommes y ont vécu à cette époque.
           ― Voyage-jordanie.com<br><button class="region__btn textFont" onclick="displayArticle()">Découvrir une autre
-            région <span> ►</span></button></p>
+            région <span class="region__btn--arrow"> ►</span></button></p>
       </div>
     </article>
-
     <div class="region__bg"></div>
-
-
-
   </section>
 
   <section id="section__visite" class="visite">
     <div>
       <div class="visite__container">
-        <img class="visite__img" src="images/petraVisite2resize.jpg"
-          alt="image représentant le trésor de pétra en Jordanie">
+        <img class="visite__img" src="images/visitePetra.jpg" alt="image représentant le trésor de pétra en Jordanie">
         <div>
           <h2 class="section__title titleFont primaryColor-txt">Visites incontournables</h2>
           <h3 class="section__subtitle textFont primaryColor-txt">A ne pas manquer lors de votre séjour !</h3>
@@ -188,13 +176,55 @@
             target="_blank">En savoir plus</a>
         </div>
       </div>
-
+      <div class="visite__content">
+        <h3 class="section__title textFont primaryColor-txt">TOP 6 des sites touristiques à visiter en Jordanie</h3>
+        <ol class="visite__listBox">
+          <li class="visite__list">
+            <h4 class="titleFont">La cité perdue de Petra</h4>
+            <p class="textFont">Cette cité antique est l'un des plus grands joyaux architecturaux du Moyen-Orient,
+              inscrite au patrimoine mondial de l'UNESCO. Les voyageurs peuvent explorer ses temples,
+              ses tombeaux et ses palais taillés dans la roche.</p>
+          </li>
+          <li class="visite__list">
+            <h4 class="titleFont">Le Wadi Rum</h4>
+            <p class="textFont">Ce désert de sable rouge est connu pour ses formations rocheuses uniques et ses
+              montagnes imposantes.
+              Les voyageurs peuvent faire du camping sous les étoiles,
+              faire une promenade en chameau ou simplement admirer la vue sur le désert.</p>
+          </li>
+          <li class="visite__list">
+            <h4 class="titleFont">Le Château de Kerak</h4>
+            <p class="textFont">Ce château fortifié datant du 12ème siècle est l'un des plus importants exemples de
+              l'architecture crusader en Jordanie.
+              Les voyageurs peuvent explorer ses salles souterraines, ses tours de guet et ses murailles.</p>
+          </li>
+        </ol>
+        <ol class="visite__listBox">
+          <li class="visite__list">
+            <h4 class="titleFont">Les bains thermaux de Ma'in</h4>
+            <p class="textFont">Ce complexe de sources thermales est situé à environ 70 km au sud de la capitale, Amman.
+              Les voyageurs peuvent profiter de bains chauds naturels et de cascades enveloppées de verdure.</p>
+          </li>
+          <li class="visite__list">
+            <h4 class="titleFont">Le Mont Nebo</h4>
+            <p class="textFont">Ce mont est un lieu de pèlerinage pour les chrétiens, car c'est là que Moïse aurait vu
+              la Terre Promise avant de mourir.
+              Les voyageurs peuvent profiter de la vue imprenable sur la plaine du Jourdain et la Mer Morte.</p>
+          </li>
+          <li class="visite__list">
+            <h4 class="titleFont ">Le Musée archéologique de Amman </h4>
+            <p class="textFont">Ce musée abrite de nombreux objets historiques et archéologiques de la Jordanie,
+              notamment des poteries, des mosaïques et des artefacts en pierre. Les voyageurs peuvent en savoir plus sur
+              la riche
+              histoire et la culture du pays.</p>
+          </li>
+        </ol>
+      </div>
       <p class="visite__info textFont">Un aperçu des images dans un carrousel est disponible sur un écran<br> plus grand
         (970px) </p>
       <div class="visite__gallery">
         <!--Il aurait été préférable des mettre les images dans des DIV (bg-img)
           afin d'alléger le HTML et d'optimiser les dimensions des images en fontion de la taille de l'écran 😕...-->
-
         <div class="gallery__container">
           <img class="currentImg gallery__view1" src="images/petra_gallery.jpg"
             alt="image représentant un monument de pétra" onclick="createSlider('images/petra_gallery.jpg')">
@@ -219,22 +249,28 @@
         <div>
           <h2 class="section__title titleFont primaryColor-txt">A propos</h2>
           <h3 class="section__subtitle textFont primaryColor-txt">De cette page web</h3>
-          <p class="about__txt textFont primaryColor-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Unde, hic dolores corrupti
-            mollitia nulla architecto itaque officia non consectetur reiciendis, magnam est illum deserunt ipsa
-            laudantium eum dicta commodi vel?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, hic dolores corrupti
-            mollitia nulla architecto itaque officia non consectetur reiciendis, magnam est illum deserunt ipsa
-            laudantium eum dicta commodi vel?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, hic dolores corrupti
-            mollitia nulla architecto itaque officia non consectetur reiciendis, magnam est illum deserunt ipsa
-            laudantium eum dicta commodi vel?
+          <p class="about__txt textFont primaryColor-txt"> J’ai créé cette page pour explorer des aspects du
+            développement web qui n’ont pas été abordés durant ma formation.<br><br>
+            Mon quatrième projet front-end est une occasion pour moi de continuer à développer mes compétences dans ce
+            domaine.<br><br>
+            Je me suis concentrer sur les sliders d’images/galeries pour améliorer mes compétences spécifiques à ce
+            sujet. <br><br>
+            Ce projet m’a permis de découvrir de nouvelles connaissances et j’ai l’intention de poursuivre mon
+            apprentissage dans
+            ce domaine.<br><br> Même si certaines images peuvent nécessiter une amélioration de qualité,
+            je suis fier de ce que j’ai accompli jusqu’à présent et enthousiaste à l’idée de continuer
+            à apprendre.<br><br>
+            <span class="about__txt--color"> J’ai choisi de vous emmener en voyage virtuel en Jordanie pour une bonne
+              raison !
+              C’est un pays qui m’inspire depuis toujours et je voulais partager ma passion avec vous. <br><br> </span>
+            Sur cette page, vous trouverez toutes les informations nécessaires pour planifier votre prochain voyage.
+            De plus, tous les liens mènent vers des sites officiels pour vous garantir une information fiable et
+            authentique.
+            Prêt pour un voyage inoubliable ? <br><br>Allons-y ! <span class="about__txt--color">✈ </span>
           </p>
         </div>
-        <img class="about__img" src="images/petraVisite1resize.jpg"
-          alt="image représentative du siq de pétra en Jordanie">
+        <img class="about__img" src="images/aboutSiq.jpg" alt="image représentative du siq de pétra en Jordanie">
       </div>
-
       <figure class="about__citation">
         <blockquote cite="https://www.hostelworld.com/blog/fr/citation-voyage/">
           <p class="about__citation-txt primaryColor-txt textFont">« Le voyage pour moi, ce n’est pas arriver, c’est
@@ -245,18 +281,25 @@
             inspireront votre prochain voyage</cite></figcaption>
       </figure>
     </div>
-
   </section>
 
   <footer class="footer">
-
+    <h2 class="titleFont secondaryColor-txt">Liens utiles pour organiser votre voyage</h2>
+    <ul>
+      <li class="titleFont primaryColor-txt"><a href="https://www.lonelyplanet.com/jordan" target="_blank">Lonely
+          Planet</a></li>
+      <li class="titleFont primaryColor-txt"><a
+          href="https://www.tripadvisor.fr/VacationRentals-g293985-Reviews-Jordan-Vacation_Rentals.html"
+          target="_blank">TripAdvisor</a></li>
+      <li class="titleFont primaryColor-txt"><a href="https://www.jordanpass.jo/" target="_blank">Jordan Pass</a></li>
+      <li class="titleFont primaryColor-txt"><a href="https://www.partir.com/Jordanie/voyage-organise/recherche.php"
+          target="_blank">Partir.com</a></li>
+      <li class="titleFont primaryColor-txt"><a href="https://www.facebook.com/visitjordanfaith" target="_blank">Visit
+          Jordan</a></li>
+      <li class="titleFont primaryColor-txt"><a href="https://www.discoverjordan.com/" target="_blank">Discover
+          Jordan</a></li>
+    </ul>
   </footer>
-
-  <!--  -->
-
-
-
-
   <script src="script.js"></script>
 </body>
 

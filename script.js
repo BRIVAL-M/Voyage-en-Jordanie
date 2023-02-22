@@ -11,6 +11,61 @@ function noScroll() {
 }
 noScroll();
 
+
+
+
+  
+ 
+
+//Display Header img slider 
+let images = document.querySelectorAll(".header__card");
+let index = 0;
+
+function displayImg() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.remove("header__card--active");
+  }
+  images[index].classList.add("header__card--active");
+  updateIndicators();
+  if (index === images.length - 1) {
+    index = 0;
+  } else {
+    index++;
+  }
+}
+
+setInterval(displayImg, 7000);
+
+let buttons = document.querySelectorAll(".header__indicator");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    index = i;
+    displayImg();
+  });
+}
+
+function updateIndicators() {
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("header__indicator--active");
+  }
+  buttons[index].classList.add("header__indicator--active");
+}
+
+updateIndicators();
+
+
+
+
+
+
+/////////////////////////////////////////////////////////
+
+
+
+
+
+
 // Display article on click
 
 let currentIndex = 0;
@@ -24,6 +79,8 @@ function displayArticle() {
   articles[currentIndex].classList.add("region__about--active");
   articleImg[currentIndex].classList.add("region__cardImg--active");
 }
+
+
 
 // Create imgs gallery
 
